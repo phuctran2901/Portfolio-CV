@@ -1,0 +1,96 @@
+/* Control */
+.control {
+    position: absolute;
+    top: 20px;
+    right: -200px;
+    background-color: white;
+    width: 200px;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: 2px 1px 8px black;
+    transition: 0.3s;
+}
+.control.active {
+    right: 0;
+}
+.control-icon {
+    position: absolute;
+    top: 30px;
+    left: -40px;
+    width: 40px;
+    height: 30px;
+    background-color: white;
+    border-right: 2px solid #e3f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+}
+.control-icon span {
+    font-size: 1.6rem;
+    animation: animationControl;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+}
+.control-color {
+    text-align: left;
+}
+.control-color p {
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e3f0f5;
+}
+.color-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.color-icon span {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.color-icon span:nth-child(1) {
+    background-color: var(--yellow-color);
+}
+.color-icon span:nth-child(2) {
+    background-color: var(--blue-color);
+}
+.color-icon span:nth-child(3) {
+    background-color: var(--orange-color);
+}
+.color-icon span:nth-child(4) {
+    background-color: var(--red-color);
+}
+.color-icon span:nth-child(5) {
+    background-color: var(--green-color);
+}
+.color-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.color-body label {
+    font-size: 1.6rem;
+}
+.color-body div {
+    display: flex;
+}
+#light-mode,
+#dark-mode {
+    font-size: 1.8rem;
+}
+@keyframes animationControl {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    0% {
+        transform: rotateZ(3600deg);
+    }
+}

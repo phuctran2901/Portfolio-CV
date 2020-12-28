@@ -1,0 +1,86 @@
+/* Main  */
+.main-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 80%;
+    background-color: var(--background-main-light);
+    overflow: hidden;
+}
+.home {
+    position: absolute;
+    left: 200%;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: var(--background-main-light);
+    color: var(--text-light);
+    transition: 0.5s all ease;
+}
+
+.home.active {
+    left: 0%;
+}
+@keyframes loadingHome {
+    0% {
+        left: 1500px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+.home-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.i {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.555), 0px 0 10px rgba(0, 0, 0, 0.555);
+}
+.home-img {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+}
+.home-title {
+    font-size: 1.6rem;
+}
+.home-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.home-socical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-socical div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    background-color: var(--yellow-color);
+    cursor: pointer;
+    color: #ffffff;
+}
+.home-socical div span {
+    font-size: 1.8rem;
+}
+.home-socical div a {
+    color: #ffffff;
+    text-decoration: none;
+}
