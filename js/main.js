@@ -9,7 +9,6 @@ window.addEventListener('load', function () {
         document.documentElement.setAttribute('theme', "dark");
     else
         document.documentElement.setAttribute('theme', "light");
-    loading();
 })
 
 function loading() {
@@ -153,7 +152,7 @@ for (let i = 0; i < sortBtn.length; i++) {
 
 // Send form to email
 window.addEventListener("DOMContentLoaded", function () {
-
+    loading();
     var form = document.getElementById("form-contact");
     var button = document.getElementById("contact-submit");
     var status = document.getElementById("status-form");

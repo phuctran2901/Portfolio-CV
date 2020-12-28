@@ -17,7 +17,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
     font-size: 10vmax;
-    font-weight: 700;
+    font-weight: 600;
     width: fit-content;
     display: flex;
     animation: colorChange 0.5s linear 3s forwards;
