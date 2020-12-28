@@ -17,6 +17,7 @@
     transform: translate(-50%, -50%);
     position: absolute;
     font-size: 10vmax;
+    font-weight: 700;
     width: fit-content;
     display: flex;
     animation: colorChange 0.5s linear 3s forwards;
@@ -47,7 +48,7 @@
         width: 0;
     }
     to {
-        width: 17vmax;
+        width: 30vmax;
     }
 }
 

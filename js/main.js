@@ -9,9 +9,26 @@ window.addEventListener('load', function () {
         document.documentElement.setAttribute('theme', "dark");
     else
         document.documentElement.setAttribute('theme', "light");
+    loading();
 })
 
-
+function loading() {
+    const loading = document.getElementById('loading');
+    const loader = document.createElement('div');
+    loader.classList.add('loader');
+    const loadText = document.createElement('div');
+    loadText.classList.add('load-text');
+    const loadedText = document.createElement('div');
+    loadedText.classList.add('loaded-text');
+    const loadingText = document.createElement('div');
+    loadingText.classList.add('loading-text');
+    loadedText.innerHTML = "PHUC";
+    loadingText.innerHTML = "TRAN";
+    loadText.appendChild(loadedText);
+    loadText.appendChild(loadingText);
+    loader.appendChild(loadText);
+    loading.appendChild(loader);
+}
 // Button control change color
 const controlButton = document.getElementById('controls');
 controlButton.addEventListener('click', () => {
